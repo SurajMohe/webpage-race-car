@@ -12,15 +12,15 @@ html, body {
 #main {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    min-height: 100vh;
+    width: 100svw;
+    min-height: 100svh;
     background-image: radial-gradient(#c3cac7 2%, #52aa8d, #59bf9d);
 }
 
 #nav {
     position: relative;
     width: 100%;
-    height: 10vh;
+    height: 10svh;
     display: flex;
     align-items: center;
     padding: 0 3vw;
@@ -139,8 +139,14 @@ html, body {
 }
 
 @media (max-width: 600px) {
+    #main{
+        width: 100svw;
+        height: 100svh;
+        background-color: red;
+    }
     #nav {
-        height: 10vh;
+        width: 100svw;
+        height: 11svh;
     }
 
     #center .line {
@@ -152,114 +158,49 @@ html, body {
     }
 
     #center > h3 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         white-space: nowrap;
         font-weight: 100;
-        letter-spacing: 0.1rem;
-    }
-
-    #maintext > h1 {
-        white-space: nowrap;
-        font-size: 5rem;
-        line-height: 20vw;
     }
 
     #maintext .row h4 {
         margin-left: 1rem;
         white-space: nowrap;
         font-size: 2rem;
-        letter-spacing: 0.1rem;
     }
-
-    #main #one {
-        width: 100%;
-    }
-
-    #main #screen {
-        display: flex;
-        align-items: center;
-        width: 80%;
-        margin-top: -3rem;
-    }
-
-    #bottom p {
-        margin-top: 1rem;
-        font-size: 1.2rem;
-        padding: 0 1rem;
-    }
-
-    #bottom button {
-        margin-top: 1rem;
-        padding: 0.5rem 1rem;
-        font-size: 1.3rem;
-    }
-
-    #bottom img {
-        margin-top: 30%;
-    }
-
-    #main #bottom {
-        width: 100%;
-    }
-}
-
-@media (max-width: 400px) {
-    #nav {
-        height: 8vh;
-    }
-
-    #center .line {
-        width: 1.7rem;
-    }
-
-    #nav > i {
-        font-size: 1.8rem;
-    }
-
-    #center > h3 {
-        font-size: 1.8rem;
-        white-space: nowrap;
-        font-weight: 100;
-    }
-
     #maintext > h1 {
-        font-size: 4.7rem;
-        line-height: 17vw;
         white-space: nowrap;
+        font-size: 8rem;
+        line-height: 27vw;
+        margin-left: .9rem;
     }
-
-    #maintext .row h4 {
-        font-size: 1.8rem;
-    }
-
-    #main #one {
-        width: 100%;
+    #main #one{
+        width: 96vw;
+        top: 50%;        
     }
 
     #main #screen {
-        display: flex;
-        align-items: center;
-        width: 80%;
-        margin-top: -2rem;
+        margin-top: -4rem;
     }
 
     #bottom p {
-        margin-top: 0.7rem;
-        font-size: 1rem;
-        padding: 0 0.5rem;
+        font-size: 1.2rem;
+        padding: 15px 1rem;
     }
 
     #bottom button {
-        margin-top: 0.6rem;
-        padding: 0.3rem 0.8rem;
-        font-size: 1rem;
+        margin-top: .7rem;
+        padding: .7rem .9rem;
+        font-size: 1.4rem;
+        border-radius: 10px;
     }
 
-    #bottom img {
-        margin-top: 25%;
-    }
+        #bottom img {
+            margin-top: -15rem;
+            width: 85%;
+        }
 
-    #main #bottom {
-        width: 100%;
-    }
-}
+        #main #bottom {
+            width: 100%;
+        }
+} 
