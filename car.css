@@ -1,11 +1,10 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     width: 100%;
     height: 100%;
 }
@@ -14,7 +13,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 100svh;
+    min-height: 100vh;
     background-image: radial-gradient(#c3cac7 2%, #52aa8d, #59bf9d);
 }
 
@@ -45,8 +44,8 @@ body {
     background-color: #2c8d6e;
 }
 
-#center>h3 {
-    font-family: "DELIRIUM NCV";
+#center > h3 {
+    font-family: "DELIRIUM NCV", sans-serif;
     font-size: 2vw;
     font-weight: 100;
     color: #fff;
@@ -66,21 +65,16 @@ body {
 }
 
 #maintext .row h4 {
-    font-family: "DELIRIUM NCV";
+    font-family: "DELIRIUM NCV", sans-serif;
     color: #fff;
     font-weight: 100;
     line-height: 5vw;
     font-size: 2vw;
 }
 
-#maintext .row h4 :nth-child(2) {
-    color: rgb(11, 5, 5);
-
-}
-
-#maintext>h1 {
+#maintext > h1 {
     color: #fff;
-    font-family: "DELIRIUM NCV";
+    font-family: "DELIRIUM NCV", sans-serif;
     font-weight: 100;
     font-size: 10vw;
     line-height: 5vw;
@@ -124,7 +118,7 @@ body {
     height: 150px;
     bottom: 5%;
     left: 50%;
-    transform: translate(-50%, -0%);
+    transform: translate(-50%, 0);
 }
 
 #bottom p {
@@ -137,48 +131,44 @@ body {
 
 #bottom button {
     color: #fff;
-    padding: .7vw .2vw;
-    letter-spacing: .5vw;
+    padding: 0.7vw 0.2vw;
+    letter-spacing: 0.5vw;
     background-color: #349f7b;
     border-radius: 1.4vw;
+    border: none;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     #nav {
-        height: 10svh;
-        /* background-color: red; */
-    }
-    #center .line{
-        width: 2rem;
-    }
-    #nav>i{
-        font-size: 2rem;
-    }
-    #center>h3 {
-        font-size: 2rem;
-        white-space: nowrap;
-        font-weight: 100;
-        letter-spacing: .1rem;
+        height: 10vh;
     }
 
-    #maintext>h1 {
-        width: fit-content;
+    #center .line {
+        width: 2rem;
+    }
+
+    #nav > i {
+        font-size: 2rem;
+    }
+
+    #center > h3 {
+        font-size: 2rem;
         white-space: nowrap;
-        color: #fff;
-        font-family: "DELIRIUM NCV";
         font-weight: 100;
+        letter-spacing: 0.1rem;
+    }
+
+    #maintext > h1 {
+        white-space: nowrap;
         font-size: 5rem;
         line-height: 20vw;
     }
 
-    h1 {
-        white-space: nowrap;
-    }
-
     #maintext .row h4 {
+        margin-left: 1rem;
         white-space: nowrap;
         font-size: 2rem;
-        letter-spacing: .1rem;
+        letter-spacing: 0.1rem;
     }
 
     #main #one {
@@ -194,21 +184,79 @@ body {
 
     #bottom p {
         margin-top: 1rem;
-        text-align: center;
-        color: #fff;
-        padding: 0vw 1rem;
-        font-weight: 300;
         font-size: 1.2rem;
+        padding: 0 1rem;
     }
 
-    #main button {
+    #bottom button {
         margin-top: 1rem;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         font-size: 1.3rem;
     }
 
-    #bottom #img {
+    #bottom img {
         margin-top: 30%;
+    }
+
+    #main #bottom {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #nav {
+        height: 8vh;
+    }
+
+    #center .line {
+        width: 1.7rem;
+    }
+
+    #nav > i {
+        font-size: 1.8rem;
+    }
+
+    #center > h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        font-weight: 100;
+    }
+
+    #maintext > h1 {
+        font-size: 4.7rem;
+        line-height: 17vw;
+        white-space: nowrap;
+    }
+
+    #maintext .row h4 {
+        font-size: 1.8rem;
+    }
+
+    #main #one {
+        width: 100%;
+    }
+
+    #main #screen {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin-top: -2rem;
+    }
+
+    #bottom p {
+        margin-top: 0.7rem;
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    #bottom button {
+        margin-top: 0.6rem;
+        padding: 0.3rem 0.8rem;
+        font-size: 1rem;
+    }
+
+    #bottom img {
+        margin-top: 25%;
     }
 
     #main #bottom {
